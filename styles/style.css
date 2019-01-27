@@ -1,0 +1,386 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ffffff;
+  line-height: 26px;
+  font-size: 16px;
+}
+
+body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: #fefefe;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: "Aleo", serif;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+font-weight: 400;
+  color: #e8e8e8;
+  letter-spacing: -1px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+a:hover, a:visited, a:active {
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+}
+
+.wrapper {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+header {
+  background: #04102a url("../images/header_bg.png") no-repeat 0 0 fixed;
+  background-size: cover;
+  min-height: 740px;
+}
+
+.logo h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+
+header .head_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+header h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 0.25em;
+  padding-bottom: 54px;
+  text-transform: none;
+}
+
+form.search_form {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: stretch;
+  margin-bottom: 123px;
+}
+
+.search_form input[type="search"] {
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: #999999;
+  font-size: 14px;
+  width: 500px;
+  letter-spacing: 3px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.search_button {
+  width: 150px;
+  font-size: 14px;
+  color: white;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  border: 2px solid #ffffff;
+  background-color: #5474fd;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.search_button img {
+  margin-left: 12px;
+  vertical-align: bottom;
+  width: 18px;
+  margin-bottom: 2px;
+}
+
+.scroll {
+  opacity: 0.5;
+}
+
+#blue_bar {
+  position: fixed;
+  top: 860px;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+}
+
+.blue_bar {
+  background-color: #5474fd;
+}
+
+.blue_bar .logo_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+}
+
+span {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.25em;
+}
+
+.logo_bar nav a {
+  margin-right: 50px;
+  font-family: "Aleo", serif;
+  font-size: 14px;
+  text-transform: uppercase;
+
+}
+
+.logo_bar nav a:last-of-type {
+  margin: 0;
+}
+
+.logo h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+main .first_section {
+  background: #04102a url("../images/castle.png") no-repeat 0 0;
+  padding-top: 124px;
+  min-height: 685px;
+  background-size: cover;
+  display: flex;
+}
+
+.content {
+  display: flex;
+}
+
+.first_flex_column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 48%;
+}
+
+.first_flex_column h2 {
+  margin-bottom: 60px;
+  margin-top: 84px;
+}
+
+.first_flex_column p:first-of-type {
+  margin-bottom: 38px;
+}
+
+.first_flex_column p:last-of-type {
+  margin-bottom: 48px;
+}
+
+.second_flex_column {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 240px;
+  margin-left: 133px;
+}
+
+.second_flex_column .out_pic {
+  margin-right: 126px;
+  margin-bottom: 5px;
+}
+
+.second_flex_column .in_pic {
+  margin-left: 126px;
+}
+
+.button {
+  background-color: #5474fd;
+  text-transform: uppercase;
+  font-family: "Aleo", serif;
+  color: white;
+  padding: 20px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 225px;
+}
+
+.instruction {
+  display: flex;
+  align-items: center;
+  min-height: 340px;
+  background-color: #333333;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.icons h2 {
+  line-height: 2.2;
+  color: #e8e8e8;
+  font-size: 36px;
+  font-weight: 300;
+  font-family: "Aleo", serif;
+  text-transform: none;
+}
+.icons img:hover {
+  filter: drop-shadow(0 0 10px rgba(250,250,250,0.6));
+  cursor: auto;
+}
+
+.spain {
+  background: #04102a url("../images/mountains.png") no-repeat 0 0;
+  min-height: 700px;
+  background-size: cover;
+  display: flex;
+  padding-top: 120px;
+}
+
+.booking_block {
+  display: flex;
+  min-height: 370px;
+  justify-content: flex-end;
+}
+
+.booking {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #232323e0;
+  padding: 50px 32px;
+  width: 48%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.booking p {
+  margin-bottom: 20px;
+}
+
+.booking_button {
+  align-self: flex-end;
+}
+
+.tourists {
+  background: #04102a url("../images/tourist_bg.png") no-repeat 0 0;
+  min-height: 730px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.cite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.info_block {
+  min-height: 284px;
+  line-height: 1.4;
+  background-color: #333333;
+  padding: 40px 55px;
+}
+
+.info_block img {
+  width: 22px;
+  height: 17px;
+  margin-right: 11px;
+  margin-bottom: 10px;
+}
+
+.info_block h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 34px;
+}
+
+h2#feedback {
+  text-transform: none;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 97px;
+}
+
+footer {
+  background-color: #232323;
+  min-height: 283px;
+  padding-top: 120px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+}
+
+#contacts .logo_up_top {
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+#contacts p {
+  margin-bottom: 30px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+}
