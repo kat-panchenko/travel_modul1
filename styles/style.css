@@ -148,7 +148,7 @@ input:focus::placeholder {
 
 #blue_bar {
   position: fixed;
-  top: 860px;
+  top: calc(100vh - 80px);
   z-index: 1000;
   left: 0;
   right: 0;
