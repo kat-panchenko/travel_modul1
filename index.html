@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
-  <script src="js/jquery-latest.js"></script>
-  <link rel="icon" href="images/icon.png">
-  <link rel="stylesheet" href="styles/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" type="application/javascript"></script>
+  <script src="js/script.js" type="application/javascript"></script>
+  <link rel="stylesheet" href="styles/style.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Aleo:300,400,700|Josefin+Sans:400,700" rel="stylesheet">
+  <link rel="icon" href="images/icon.png">
   <title>Travel More</title>
 </head>
 <body>
@@ -125,54 +125,9 @@
 </footer>
 <div class="modal-overlay" data-close>
   <div class="modal-body">
-    <img src="https://www.tesla.com/content/dam/tesla-site/sx-redesign/img/socialcard/MS.jpg" alt="Tesla" />
+    <img src="https://www.tesla.com/content/dam/tesla-site/sx-redesign/img/socialcard/MS.jpg" alt="Tesla"/>
     <button class="modal-button" type="button" data-close>Close</button>
   </div>
 </div>
-<script>
-    jQuery(document).ready(function () {
-        jQuery("a.scrollto").click(function () {
-            elementClick = jQuery(this).attr("href");
-            destination = jQuery(elementClick).offset().top;
-            jQuery('html:not(:animated),body:not(:animated)').animate({scrollTop: destination}, 1300);
-            return false;
-        });
-    });
-
-    var h_hght = $(window).height() - 80;
-    var h_mrg = 0;
-
-    $(function () {
-
-        var elem = $('#blue_bar');
-        var top = $(this).scrollTop();
-
-        if (top > h_hght) {
-            elem.css('top', h_mrg);
-        }
-
-        $(window).scroll(function () {
-            top = $(this).scrollTop();
-
-            if (top + h_mrg < h_hght) {
-                elem.css('top', (h_hght - top));
-            } else {
-                elem.css('top', h_mrg);
-            }
-        });
-
-    });
-
-    $('.show-modal').click(function () {
-        $('.modal-overlay').addClass('active');
-        var top = $(document).scrollTop();
-        $('.modal-overlay').css('top', top);
-        $('body').addClass('no-scroll');
-    });
-    $('[data-close]').click(':not(.modal-body)', function () {
-        $('.modal-overlay').removeClass('active');
-        $('body').removeClass('no-scroll');
-    });
-</script>
 </body>
 </html>

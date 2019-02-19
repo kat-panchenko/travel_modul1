@@ -39,7 +39,7 @@ h4 {
 
 p {
   font-size: 16px;
-font-weight: 400;
+  font-weight: 400;
   color: #e8e8e8;
   letter-spacing: -1px;
 }
@@ -273,8 +273,9 @@ main .first_section {
   font-family: "Aleo", serif;
   text-transform: none;
 }
+
 .icons img:hover {
-  filter: drop-shadow(0 0 10px rgba(250,250,250,0.6));
+  filter: drop-shadow(0 0 10px rgba(250, 250, 250, 0.6));
   cursor: auto;
 }
 
@@ -397,6 +398,7 @@ footer {
   display: flex;
   z-index: 999;
 }
+
 .modal-body {
   width: 600px;
   min-height: 400px;
@@ -424,5 +426,6 @@ footer {
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 5px;
-cursor: pointer;
+  cursor: pointer;
+  outline: none;
 }
