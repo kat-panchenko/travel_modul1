@@ -48,7 +48,7 @@
             by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee.</p>
           <p>Ddislike men who are so beguiled and demoralized by the charms of
             pleasure of the moment, so blinded by desire, that.</p>
-          <button type="button" value="search" class="button">Explore Places</button>
+          <button type="button" value="search" class="button show-modal">Explore Places</button>
         </div>
         <div class="second_flex_column">
           <img class="out_pic" src="images/view1.png" alt="pic">
@@ -86,7 +86,7 @@
           <h4>Grand Spain Madrid</h4>
           <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain
             was account born and I account will give you a complete account of the system</p>
-          <button type="button" value="search" class="button booking_button">Book now</button>
+          <button type="button" value="search" class="button booking_button show-modal">Book now</button>
         </div>
       </div>
     </div>
@@ -123,6 +123,12 @@
     </div>
   </div>
 </footer>
+<div class="modal-overlay" data-close>
+  <div class="modal-body">
+    <img src="https://www.tesla.com/content/dam/tesla-site/sx-redesign/img/socialcard/MS.jpg" alt="Tesla" />
+    <button class="modal-button" type="button" data-close>Close</button>
+  </div>
+</div>
 <script>
     jQuery(document).ready(function () {
         jQuery("a.scrollto").click(function () {
@@ -132,8 +138,7 @@
             return false;
         });
     });
-</script>
-<script>
+
     var h_hght = $(window).height() - 80;
     var h_mrg = 0;
 
@@ -156,6 +161,17 @@
             }
         });
 
+    });
+
+    $('.show-modal').click(function () {
+        $('.modal-overlay').addClass('active');
+        var top = $(document).scrollTop();
+        $('.modal-overlay').css('top', top);
+        $('body').addClass('no-scroll');
+    });
+    $('[data-close]').click(':not(.modal-body)', function () {
+        $('.modal-overlay').removeClass('active');
+        $('body').removeClass('no-scroll');
     });
 </script>
 </body>
